@@ -1,0 +1,15 @@
+host:localhost 
+
+cpanel:
+
+database: koodosys_bulksmsdb
+username: koodosys_bulksms
+
+
+
+email: stevegachie3099@gmail.com
+user:  stevebab
+pass:  stevenosis3099
+
+Find below your API credentials.
+API Key: f034003f66e748648c4418ff76bdc24f

@@ -1,0 +1,354 @@
+﻿/*
+
+Theme Name: spp24
+
+Theme URI: spp24.pl
+
+Description: Strona główna dla Spp24
+
+Version: 1.0
+
+Author: Łukasz Przybyła
+
+Author URI: http://www.puzzix.pl/
+
+*/
+
+
+
+/*   html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark  html5doctor.com/html-5-reset-stylesheet/*/
+
+html, body, div, span, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+abbr, address, cite, code,
+
+del, dfn, em, img, ins, kbd, q, samp,
+
+small, strong, sub, sup, var,
+
+b, i,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, figure, footer, header, hgroup, menu, nav, section, menu,
+
+time, mark, audio, video {
+
+margin:0;
+
+padding:0;
+
+border:0;
+
+outline:0;
+
+font-size:100%;
+
+vertical-align:baseline;
+
+background:transparent;
+text-align: justify;
+
+}
+
+article, aside, figure, footer, header,
+
+hgroup, nav, section { display:block; }
+
+nav ul { list-style:none; }
+
+blockquote, q { quotes:none; }
+
+blockquote:before, blockquote:after,
+
+q:before, q:after { content:''; content:none; }
+
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help; }
+
+/* tables still need cellspacing="0" in the markup */
+
+table { border-collapse:collapse; border-spacing:0; }
+
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+
+input, select { vertical-align:middle; }
+
+/* END RESET CSS */
+
+
+
+html { -webkit-font-smoothing: antialiased; }
+
+/* Moduł zmiany języka */
+
+#qtranslate-chooser {
+float:right;
+list-style-type:none;
+padding:10px;
+padding-right:9px;
+background:#fff;
+-webkit-border-bottom-right-radius: 5px;
+-moz-border-radius-bottomright: 5px;
+border-bottom-right-radius: 5px;
+-o-border-radius-bottomright: 5px;
+
+
+}
+
+#qtranslate-chooser li {
+float:left;
+margin:5px;
+}
+
+#qtranslate-chooser li a {
+font-size:11px;
+color:#208fed;
+}
+
+#qtranslate-chooser li.active a{
+	font-weight:bold;
+}
+
+#mapa {
+width:750px;
+height:500px;
+}
+
+body {
+	background:#e5e5e5 url(images/bg.jpg) top center no-repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+header {
+	width:980px;
+	margin:0 auto;
+	background:transparent url(images/header.png) top left no-repeat;
+}
+
+#main {
+	width:987px;
+	margin:0 auto;
+	padding-bottom:50px;
+}
+
+#menu-glowne {
+	width:206px;
+	float:left;
+	list-style-type:none;
+		}
+	
+#menu-glowne li {
+	float:left;
+	display:block;
+	width:100%;
+}
+
+#menu-glowne li a {
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#fff;
+	text-shadow:1px 1px 0px #ae0003;
+	display:block;
+	width:206px;
+	text-indent:10px;
+	height:45px;
+	line-height:45px;
+	background:url(images/menu.jpg) 0px 0px no-repeat;
+}
+
+#menu-glowne li ul.sub-menu li a {
+	background:url(images/menu.jpg) 0px -135px no-repeat;
+	text-indent:20px;
+
+}
+
+#menu-glowne li a:hover, #menu-glowne li ul.sub-menu li a:hover {
+	background:url(images/menu.jpg) 0px -45px no-repeat;
+	color:#333;
+	text-shadow:1px 1px 0px #fff;
+}
+
+#menu-glowne li.current-menu-item a {
+		background:url(images/menu.jpg) 0px -90px no-repeat;
+	color:#333;
+	text-shadow:1px 1px 0px #fff;
+
+}
+
+#main section {
+	float:left;
+	width:750px;
+	padding:15px;
+	background:#fff;
+	line-height:24px;
+	-webkit-border-top-right-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-bottomright: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+-o-border-radius-topright: 5px;
+-o-border-radius-bottomright: 5px;
+-ms-border-radius-topright: 5px;
+-ms-border-radius-bottomright: 5px;
+
+
+}
+
+#main section h1 {
+
+	color:#1064B1;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-weight:400;
+
+	font-size:24px;
+
+	margin-bottom:15px;
+
+	padding-bottom:15px;
+
+	border-bottom:solid 1px #a1cbf2;
+
+}
+
+
+
+#main section a {
+
+	color:#029dff;
+
+}
+
+
+
+#main section a:hover {
+	text-decoration:none;
+}
+
+#main section ul, #main section ol {
+	margin:10px 20px;
+}
+
+#main section ul li, #main section ol li {
+	color:#1f3c55;
+}
+
+#main section table {
+	border:solid 1px #2368a6;
+}
+
+#main section table tr td {
+	border-bottom:solid 1px #80c0fb;
+	border-left:solid 1px #80c0fb;
+}
+
+ul#menu-dolne {
+	width:980px;
+	clear:left;
+	float:left;
+		list-style-type:none;
+}
+
+ul#menu-dolne li {
+float:right;
+text-align:center;
+padding:15px 10px;
+}
+
+ul#menu-dolne li a {
+	color:#fff;
+	display:block;
+	padding:5px 10px;
+	background:#1062ad;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	-ms-border-radius:3px;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:11px;
+	
+}
+
+ul#menu-dolne li a:hover {
+	background:#dae45b;
+	color:#333;
+		text-shadow:1px 1px 0px #fff;
+}
+
+footer {
+	width:980px;
+	float:left;
+	clear:left;
+	text-align:right;
+	color:#fff;
+	margin-bottom:40px;
+	color:#333;
+}
+
+footer img {
+	float:right;
+}
+
+
+h2 {
+
+	font-size:18px;
+
+	font-weight:500;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	margin:10px 0px;
+
+}
+
+
+
+.auto-style1 {
+
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.auto-style2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+}
+.auto-style4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #0066FF;
+}
+.auto-style5 {
+	color: #FFFFFF;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #ff0000;
+}
+.auto-style6 {
+	color: #FFFFFF;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #00b050;
+}
